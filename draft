@@ -26,3 +26,28 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="row align-items-center row-1">
+                <div class="col-xl col-lg col-md row-1-1" style="flex-grow: 2; padding: 15px">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/new-logo.png" alt="">
+                </div>
+                <div class="col-xl col-lg col-md">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/mini.png" alt="">
+                </div>
+                <div class="col-xl col-lg col-md">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/minor.png" alt="">
+                </div>
+                <div class="col-xl col-lg col-md">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/major.png" alt="">
+                </div>
+                <div class="col-xl col-lg col-md">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/grand.png" alt="">
+                </div>
+                <div class="col-xl col-lg col-md">
+                    <img src="https://www.eggckr.com/wp-content/uploads/2018/08/vvip.png" alt="">
+                </div>
+            </div>
+
+            https://www.eggckr.com/wp-content/uploads/2018/08/new-logo.png
