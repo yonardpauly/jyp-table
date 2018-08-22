@@ -1,0 +1,160 @@
+@-ms-viewport {
+	width: device-width
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    border: 1px solid #333
+}
+
+html, body {
+    margin: 0; padding: 0;
+    font-family: 'Tahoma', Courier, monospace;
+    line-height: 1.20;
+    position: relative
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto
+}
+
+.jyp-container {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 auto
+}
+
+@media (min-width: 576px) {
+	.jyp-container { max-width: 540px }
+}
+
+@media (min-width: 768px) {
+	.jyp-container { max-width: 720px }
+}
+
+@media (min-width: 992px) {
+	.jyp-container { max-width: 960px }
+}
+
+@media (min-width: 1200px) {
+	.jyp-container { max-width: 1140px }
+}
+
+.jyp-container-fluid {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 auto
+}
+
+.jyp-row {
+    display: block;
+    margin: 0 -15px
+}
+
+.clear-both {
+    clear: both;
+}
+
+[class*='col-'] {
+    position: relative;
+	min-height: 1px;
+	padding: 0 15px
+}
+
+.jyp-container::before, .jyp-container::after,
+.jyp-row::before, .jyp-row::after {
+    clear: both
+}
+
+@media (min-width: 576px) {
+    [class*='col-sm'] { float: left }
+    .jyp .col-sm-1 { width: 8.33% }
+    .jyp .col-sm-2 { width: 16.66% }
+    .jyp .col-sm-3 { width: 25% }
+    .jyp .col-sm-4 { width: 33.33% }
+    .jyp .col-sm-5 { width: 41.66% }
+    .jyp .col-sm-6 { width: 50% }
+    .jyp .col-sm-7 { width: 58.33% }
+    .jyp .col-sm-8 { width: 66.66% }
+    .jyp .col-sm-9 { width: 75% }
+    .jyp .col-sm-10 { width: 83.33% }
+    .jyp .col-sm-11 { width: 91.66% }
+    .jyp .col-sm-12 { width: 100% }
+}
+
+@media (min-width: 768px) {
+    [class*='col-md'] { float: left }
+    .jyp .col-md-1 { width: 8.33% }
+    .jyp .col-md-2 { width: 16.66% }
+    .jyp .col-md-3 { width: 25% }
+    .jyp .col-md-4 { width: 33.33% }
+    .jyp .col-md-5 { width: 41.66% }
+    .jyp .col-md-6 { width: 50% }
+    .jyp .col-md-7 { width: 58.33% }
+    .jyp .col-md-8 { width: 66.66% }
+    .jyp .col-md-9 { width: 75% }
+    .jyp .col-md-10 { width: 83.33% }
+    .jyp .col-md-11 { width: 91.66% }
+    .jyp .col-md-12 { width: 100% }
+}
+
+@media (min-width: 992px) {
+    [class*='col-lg'] { float: left }
+    .jyp .col-lg-1 { width: 8.33% }
+    .jyp .col-lg-2 { width: 16.66% }
+    .jyp .col-lg-3 { width: 25% }
+    .jyp .col-lg-4 { width: 33.33% }
+    .jyp .col-lg-5 { width: 41.66% }
+    .jyp .col-lg-6 { width: 50% }
+    .jyp .col-lg-7 { width: 58.33% }
+    .jyp .col-lg-8 { width: 66.66% }
+    .jyp .col-lg-9 { width: 75% }
+    .jyp .col-lg-10 { width: 83.33% }
+    .jyp .col-lg-11 { width: 91.66% }
+    .jyp .col-lg-12 { width: 100% }
+}
+
+@media (min-width: 1200px) {
+    [class*='col-xl'] { float: left }
+    .jyp .col-xl-1 { width: 8.33% }
+    .jyp .col-xl-2 { width: 16.66% }
+    .jyp .col-xl-3 { width: 25% }
+    .jyp .col-xl-4 { width: 33.33% }
+    .jyp .col-xl-5 { width: 41.66% }
+    .jyp .col-xl-6 { width: 50% }
+    .jyp .col-xl-7 { width: 58.33% }
+    .jyp .col-xl-8 { width: 66.66% }
+    .jyp .col-xl-9 { width: 75% }
+    .jyp .col-xl-10 { width: 83.33% }
+    .jyp .col-xl-11 { width: 91.66% }
+    .jyp .col-xl-12 { width: 100% }
+}
+
+/*
+* VIP TABLE 2018 by John Yonard Pauly
+* Designed by Eunice Langga
+*/
+/* VIP TABLE STYLES STARTS HERE */
+
+.vip-table {
+    background: #bfbfbf;
+    position: relative;
+}
+
+.vip-table::before, .vip-table::after {
+    clear: both;
+    content: "";
+}

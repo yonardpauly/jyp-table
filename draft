@@ -1,0 +1,28 @@
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-12">
+                            <img src="images/new-logo.png" alt="">
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="images/mini.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="images/minor.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="images/major.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="images/grand.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="images/vvip.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
