@@ -7,14 +7,15 @@
 *
 */
 
-* {
-    /* border: 0.4px solid #333; */
-}
+/* * {
+    border: 1px solid #333;
+} */
 
 .jyp {
     background-image: -webkit-radial-gradient(#ffffff, #bbb8b8);
     background-image: radial-gradient(#ffffff, #bbb8b8);
     text-align: center;
+    border-radius: 10px;
     padding: 35px 20px 35px
 }
 
@@ -30,6 +31,12 @@
 *
 */
 
+.jyp .row h1,
+.jyp .row h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important
+}
+
 .jyp .jyp-h1,
 .jyp .jyp-h2,
 .jyp .jyp-h3,
@@ -42,13 +49,23 @@
 
 .jyp .jyp-h1,
 .jyp .jyp-h2,
-.jyp .jyp-h3 {
+.jyp .jyp-h3,
+.jyp .jyp-h4 {
     background: -webkit-linear-gradient(#eee7e0, #e2a75f);
     background: -moz-linear-gradient(#eee7e0, #e2a75f);
     background: linear-gradient(#eee7e0, #e2a75f);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text
+}
+
+.row-1 div:not(:first-child) > img {
+    transform: scale(1.1, 1.1);
+}
+
+.jyp > [class*="row-"]:not(:first-child) > [class*="row-"] {
+    display: flex;
+    justify-content: center;
 }
 
 .jyp .row-3-2 .jyp-h3,
@@ -189,28 +206,15 @@
 
 .border,
 .border-last {
-    background: linear-gradient(to right, rgba(250, 190, 88, 0.9), rgba(243, 215, 166, 0.9), rgba(250, 190, 88, 0.9));
+    /* background: linear-gradient(to right, rgba(250, 190, 88, 0.9), rgba(243, 215, 166, 0.9), rgba(250, 190, 88, 0.9)); */
+    background:  rgba(250, 190, 88, 0.9);
     height: 10px;
     width: 100%
 }
 
 .border,
 .border-last {
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7);
-    /* border-bottom: 0.5px inset rgba(34, 31, 31, 0.7);
-    border-top: 0.5px inset rgba(34, 31, 31, 0.7) */
-}
-
-/*
-*
-* HEADING MARGINS
-*
-*/
-
-.jyp .row h1,
-.jyp .row h2 {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important
+    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
 }
 
 /*
@@ -219,64 +223,32 @@
 *
 */
 
-.row-2-1,
-.row-3-1,
-.row-4-1,
-.row-5-1,
-.row-6-1,
-.row-7-1,
-.row-8-1,
-.row-9-1 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
-}
-
-.row-2-2,
-.row-3-2,
-.row-4-2,
-.row-5-2,
-.row-6-2,
-.row-7-2,
-.row-8-2,
-.row-9-2 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
-}
-
-.row-2-3,
-.row-3-3,
-.row-4-3,
-.row-5-3,
-.row-6-3,
-.row-7-3,
-.row-8-3,
-.row-9-3 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
-}
-
-.row-2-4,
-.row-3-4,
-.row-4-4,
-.row-5-4,
-.row-6-4,
-.row-7-4,
-.row-8-4,
-.row-9-4 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
-}
-
-.row-2-5,
-.row-3-5,
-.row-4-5,
-.row-5-5,
-.row-6-5,
-.row-7-5,
-.row-8-5,
-.row-9-5 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
+.row-2-1, .row-3-1,
+.row-4-1, .row-5-1,
+.row-6-1, .row-7-1,
+.row-8-1, .row-9-1,
+.row-2-2, .row-3-2,
+.row-4-2, .row-5-2,
+.row-6-2, .row-7-2,
+.row-8-2, .row-9-2,
+.row-2-3, .row-3-3,
+.row-4-3, .row-5-3,
+.row-6-3, .row-7-3,
+.row-8-3, .row-9-3,
+.row-2-4, .row-3-4,
+.row-4-4, .row-5-4,
+.row-6-4, .row-7-4,
+.row-8-4, .row-9-4,
+.row-2-5, .row-3-5,
+.row-4-5, .row-5-5,
+.row-6-5, .row-7-5,
+.row-8-5, .row-9-5,
+.row-2-6, .row-3-6,
+.row-4-6, .row-5-6,
+.row-6-6, .row-7-6,
+.row-8-6, .row-9-6 {
+    border-left: 10px solid rgba(250, 190, 88, 0.9);
+    box-shadow: 12px 1px 1px rgba(34, 31, 31, 0.7)
 }
 
 .row-2-6,
@@ -287,18 +259,19 @@
 .row-7-6,
 .row-8-6,
 .row-9-6 {
-    border-left: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
+    border-right: 10px solid rgba(250, 190, 88, 0.9);
+    box-shadow: 1px 1px 1px rgba(34, 31, 31, 0.9)
 }
 
-.row-2-6,
-.row-3-6,
-.row-4-6,
-.row-5-6,
-.row-6-6,
-.row-7-6,
-.row-8-6,
-.row-9-6 {
-    border-right: 10px solid rgba(233, 163, 43, 0.9);
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.9)
+@media (min-width: 992px) {
+    .row-2 > [class*="row-"] {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+}
+
+@media (max-width: 991.8px) {
+    .row-2 * {
+        display: none
+    }
 }
