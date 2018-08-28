@@ -7,9 +7,7 @@
 *
 */
 
-/* * {
-    border: 1px solid #333;
-} */
+
 
 .jyp {
     background-image: -webkit-radial-gradient(#ffffff, #bbb8b8);
@@ -20,9 +18,9 @@
 }
 
 .jyp img {
-    width: 100%;
+    vertical-align: middle;
     height: auto;
-    vertical-align: middle
+    width: 100%;
 }
 
 /*
@@ -31,41 +29,35 @@
 *
 */
 
-.jyp .row h1,
-.jyp .row h2 {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important
+.jyp > [class*="row-"]:not(:first-child) > [class*="row-"] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center !important;
+    justify-content: center
 }
 
-.jyp .jyp-h1,
-.jyp .jyp-h2,
-.jyp .jyp-h3,
-.jyp .jyp-h4 {
-    letter-spacing: -1px;
-    font-weight: bold;
-    line-height: 1.1;
-    vertical-align: middle
+.f-grow-2 {
+    -ms-flex-positive: 2 !important;
+    flex-grow: 2 !important;
+    padding: 15px
 }
 
-.jyp .jyp-h1,
-.jyp .jyp-h2,
-.jyp .jyp-h3,
-.jyp .jyp-h4 {
+[class*="jyp-h"] {
     background: -webkit-linear-gradient(#eee7e0, #e2a75f);
     background: -moz-linear-gradient(#eee7e0, #e2a75f);
     background: linear-gradient(#eee7e0, #e2a75f);
     -webkit-text-fill-color: transparent;
+    -ms-flex-item-align: auto !important;
     -webkit-background-clip: text;
-    background-clip: text
+    background-clip: text;
+    letter-spacing: -1px;
+    margin: 0 !important;
+    align-self: center;
+    line-height: 1.1
 }
 
 .row-1 div:not(:first-child) > img {
-    transform: scale(1.1, 1.1);
-}
-
-.jyp > [class*="row-"]:not(:first-child) > [class*="row-"] {
-    display: flex;
-    justify-content: center;
+    transform: scale(1.1, 1.1)
 }
 
 .jyp .row-3-2 .jyp-h3,
@@ -200,21 +192,16 @@
 
 /*
 *
-* HORIZONTAL GRADIENT BORDERS 
+* HORIZONTAL GRADIENT BORDERS
 *
 */
 
 .border,
 .border-last {
-    /* background: linear-gradient(to right, rgba(250, 190, 88, 0.9), rgba(243, 215, 166, 0.9), rgba(250, 190, 88, 0.9)); */
+    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7);
     background:  rgba(250, 190, 88, 0.9);
     height: 10px;
     width: 100%
-}
-
-.border,
-.border-last {
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7)
 }
 
 /*
@@ -263,15 +250,235 @@
     box-shadow: 1px 1px 1px rgba(34, 31, 31, 0.9)
 }
 
-@media (min-width: 992px) {
-    .row-2 > [class*="row-"] {
-        padding-top: 15px;
-        padding-bottom: 15px
+@media (max-width: 991.8px) {
+    .row-2 * {
+        background: none;
+        display: none;
+        border: none;
+        padding: 0;
+        margin: 0
     }
 }
 
-@media (max-width: 991.8px) {
-    .row-2 * {
-        display: none
+/*
+*
+* MOBILE VIEW STYLES
+*
+*/
+
+.md-show > img {
+    transform: scale(0.6, 0.6)
+}
+
+.md-show .row img {
+    transform: scale(0.9, 0.9);
+}
+
+.jyp-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-box {
+    margin-bottom: 25px !important
+}
+
+.card-box:nth-child(1) {
+    margin-top: 20px !important
+}
+
+.card-bg {
+    background: linear-gradient(to right, #9d2b2b, #e97373);
+    box-shadow: 1px 3px 2px #200606;
+    border: 0.2px solid #9d2b2b;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    padding: 15px
+}
+
+.card-1 {
+    z-index: 1;
+    transform: rotate(3deg)
+}
+
+.card-2 {
+    z-index: 2;
+    transform: rotate(-3deg)
+}
+
+.card-3 {
+    z-index: 3;
+}
+
+.jyp-card-body {
+    color: #fff;
+    z-index: 4;
+}
+
+.flex-content {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-gold {
+    background: -webkit-linear-gradient(to top, #e2a75f, #eee7e0, #e2a75f);
+    background: -moz-linear-gradient(to top, #e2a75f, #eee7e0, #e2a75f);
+    background: linear-gradient(to top, #e2a75f, #eee7e0, #e2a75f);
+    border-color: #e2a75f;
+    font-weight: bold;
+    color: #240909;
+    outline: none
+}
+
+.btn-gold:focus {
+    box-shadow: 0 0 0 0.2rem #9d2b2b;
+}
+
+@media (min-width: 768px) {
+    .md-show {
+        display: none !important;
+        visibility: hidden !important
     }
+}
+
+@media (max-width: 767.9px) {
+    .md-hidden {
+        display: none !important;
+        visibility: hidden !important
+    }
+
+    .md-show .row img {
+        margin-top: 0
+    }
+}
+
+@media (max-width: 575.9px) {
+    .flex-content {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin-bottom: 30px
+    }
+
+    .md-show .row img {
+        margin-top: 25px
+    }
+}
+
+/* JYP MODAL */
+
+/* The Modal (background) */
+
+.jyp-modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.jyp-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.jyp-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.jyp-close:hover,
+.jyp-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.jyp-modal-header {
+    padding: 2px 16px;
+    background-color: #9d2b2b;
+    color: white;
+}
+
+.jyp-modal-body {
+    padding: 2px 16px;
+}
+
+.jyp-modal-footer {
+    padding: 2px 16px;
+    background-color: #9d2b2b;
+    color: white;
+}
+
+* {
+    /* border: 0.5px solid #333; */
 }
