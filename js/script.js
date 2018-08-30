@@ -2,7 +2,7 @@ window.onload = function (event) {
 
     var jyp_modal = document.getElementsByClassName('jyp-modal')
     var modal_btn = document.getElementsByClassName('btn-gold')
-    var modal_close = document.getElementsByClassName('close')
+    var modal_close = document.getElementsByClassName('jyp-close')
 
     for (let i = 0; i <= jyp_modal.length; i++) {
         modal_btn[i].onclick = () => {
