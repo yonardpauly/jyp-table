@@ -12,13 +12,17 @@
     background-image: radial-gradient(#ffffff, #bbb8b8);
     text-align: center;
     border-radius: 10px;
-    padding: 35px 20px 35px
+    padding: 35px 30px 35px !important
 }
 
 .jyp img {
     vertical-align: middle;
     height: auto;
     width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important
 }
 
 /*
@@ -48,17 +52,17 @@
     -ms-flex-item-align: auto !important;
     -webkit-background-clip: text;
     background-clip: text;
-    letter-spacing: -1px;
+    letter-spacing: -1px !important;
     margin: 0 !important;
     align-self: center;
     line-height: 1.1
 }
 
-.row-1 div:not(:first-child) > img {
+.row-1 div:not(:first-child)>img {
     transform: scale(1.2, 1.2) translate(-4%)
 }
 
-.row-1 div:first-child > img {
+.row-1 div:first-child>img {
     transform: scale(0.8, 0.8)
 }
 
@@ -200,10 +204,9 @@
 
 .border,
 .border-last {
-    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7);
-    /* background:  rgba(250, 190, 88, 0.9); */
     background: -webkit-linear-gradient(to right, #c0a76c, #f7f8c5, #e1c781);
     background: linear-gradient(to right, #c0a76c, #f7f8c5, #e1c781);
+    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7);
     height: 10px;
     z-index: 10;
     width: 100%
@@ -352,7 +355,7 @@
 *
 */
 
-.md-show > img {
+.md-show>img {
     transform: scale(0.6, 0.6)
 }
 
@@ -534,36 +537,142 @@
 
 /* The Close Button */
 
-.jyp-close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold
+.close-bg {
+    transition: background .1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    right: -7px;
+    top: -7px
 }
 
-.jyp-close:hover,
-.jyp-close:focus {
+.jyp-close {
+    color: white;
+    font-weight: 800;
+}
+
+.close-bg:focus {
+    background: #e97373;
     color: #000;
     text-decoration: none;
     cursor: pointer
 }
 
+.close-bg h3:hover {
+    color: #000;
+}
+
 .jyp-modal-header {
-    padding: 2px 16px;
+    position: relative;
+    padding: 5px;
     background-color: #9d2b2b;
     color: white
 }
 
 .jyp-modal-body {
-    padding: 2px 16px
+    position: relative;
+    padding: 5px
 }
 
 .jyp-modal-footer {
-    padding: 2px 16px;
+    padding: 5px;
     background-color: #9d2b2b;
     color: white
 }
 
-* {
-    /* border: 0.5px solid #333 */
+.modal-body-divider {
+    background: -webkit-linear-gradient(to right, #c0a76c, #f7f8c5, #e1c781);
+    background: linear-gradient(to right, #c0a76c, #f7f8c5, #e1c781);
+    box-shadow: 0 1px 2px rgba(34, 31, 31, 0.7);
+    position: absolute;
+    height: 95%;
+    width: 5px;
+    left: 50%
 }
+
+table {
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody+tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table .table {
+    background-color: #fff;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-dark.table-bordered {
+    border: 0;
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-dark.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive>.table-bordered {
+    border: 0;
+}
+
+/* * {
+    border: 0.5px solid #333
+} */
