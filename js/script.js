@@ -1,4 +1,4 @@
-window.onload = function (event) {
+window.onload = () => {
 
     var jyp_modal = document.getElementsByClassName('jyp-modal')
     var modal_btn = document.getElementsByClassName('btn-gold')
@@ -16,9 +16,12 @@ window.onload = function (event) {
         if (event.target == jyp_modal[i]) {
             jyp_modal[i].style.display = "none"
         }
-    }
-
-    jyp_modal[i].onclick = () => {
-        jyp_modal[i].style.display = "none"
+        
+        jyp_modal[i].onclick = (evt) => {
+            if (evt.target == jyp_modal[i]) {
+                console.log(`${jyp_modal[i].className}-${[i]} has been closed.`)
+                jyp_modal[i].style.display = "none"
+            }
+        }
     }
 }
