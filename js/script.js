@@ -12,10 +12,6 @@ window.onload = () => {
         modal_close[i].onclick = () => {
             jyp_modal[i].style.display = "none"
         }
-    
-        if (event.target == jyp_modal[i]) {
-            jyp_modal[i].style.display = "none"
-        }
         
         jyp_modal[i].onclick = (evt) => {
             if (evt.target == jyp_modal[i]) {

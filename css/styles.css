@@ -36,7 +36,7 @@ h6 {
 *
 */
 
-.jyp>[class*="row-"]:not(:first-child)>[class*="row-"] {
+.jyp > [class*="row-"]:not(:first-child) > [class*="row-"] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center !important;
@@ -365,13 +365,16 @@ h6 {
 }
 
 .md-show .row img {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9)
 }
 
 .jyp-card {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .card-box {
@@ -408,7 +411,7 @@ h6 {
 
 .jyp-card-body {
     color: #fff;
-    z-index: 4;
+    z-index: 4
 }
 
 .flex-content {
@@ -432,7 +435,7 @@ h6 {
     padding: 1.375rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
 
 .btn-gold {
@@ -496,7 +499,7 @@ h6 {
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4)
 }
 
 /* Modal Content */
@@ -557,7 +560,7 @@ h6 {
 
 .jyp-close {
     color: white;
-    font-weight: 800;
+    font-weight: 800
 }
 
 .close-bg:focus {
@@ -568,7 +571,7 @@ h6 {
 }
 
 .close-bg h3:hover {
-    color: #000;
+    color: #000
 }
 
 .jyp-modal-header {
@@ -600,68 +603,38 @@ h6 {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse
 }
 
 .table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .table th,
 .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6
 }
+
+.table th { letter-spacing: -1px !important }
+
+.table td { text-align: right !important }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6
 }
 
 .table tbody+tbody {
-    border-top: 2px solid #dee2e6;
-}
-
-.table .table {
-    background-color: #fff;
-}
-
-.table-bordered {
-    border: 1px solid #dee2e6;
-}
-
-.table-bordered th,
-.table-bordered td {
-    border: 1px solid #dee2e6;
-}
-
-.table-bordered thead th,
-.table-bordered thead td {
-    border-bottom-width: 2px;
+    border-top: 2px solid #dee2e6
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.table-hover .table-active:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-}
-
-.table-dark.table-bordered {
-    border: 0;
-}
-
-.table-dark.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.table-dark.table-hover tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: rgba(0, 0, 0, 0.05)
 }
 
 .table-responsive {
@@ -669,11 +642,11 @@ table {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: -ms-autohiding-scrollbar
 }
 
-.table-responsive>.table-bordered {
-    border: 0;
+.table-responsive > .table-bordered {
+    border: 0
 }
 
 /* * {
