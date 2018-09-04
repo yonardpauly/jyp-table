@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.wrapper {
+    height: 800px;
+    background:url(https://cloud.githubusercontent.com/assets/12628112/22919974/b1e5ade4-f2cd-11e6-9f89-21b61ab520e1.png) no-repeat center center/cover;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+}
+.wrapper2 {
+    background:url(https://cloud.githubusercontent.com/assets/12628112/23006630/110e64c0-f43e-11e6-8be1-6616f1803a37.png) no-repeat center center/cover;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+}
+.wrapper .eggc_logo {
+    position:absolute;
+    width: 168px;
+    left: 30px;
+    top: 15px;
+}
+.wrapper2 .eggc_logo {
+    width: 168px;
+}
+.wrapper .inner {
+    position:relative;
+    background-color:rgba(0,0,0,0.7);
+    margin-top:200px;
+    text-align:center;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.wrapper2 .inner {
+    background-color:rgba(0,0,0,0.7);
+    padding: 20px 0;
+}
+.wrapper2 .vips {
+    text-align:center;
+    margin: 20px 0;
+}
+.wrapper2 .vips img {
+    margin: 0 auto;
+}
+.wrapper2 .vips h6 {
+    font-family: 'Nanum Gothic', sans-serif !important;
+    font-size: 30px;
+    padding: 20px 0;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(255, 223, 96)),color-stop(0.2, rgb(255, 248, 172)),color-stop(0.5, rgb(158, 112, 31)),color-stop(0.78, rgb(219, 194, 52)),color-stop(1, rgb(255, 223, 96)));
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.wrapper2 .vips .btn {
+    width: 70%;
+    color: #000000;
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%,color-stop(0, rgb(218, 151, 44)),color-stop(0.15, rgb(198, 139, 36)),color-stop(0.35, rgb(255, 180, 34)),color-stop(0.55, rgb(255, 236, 191)),color-stop(0.8, rgb(255, 174, 46)),color-stop(1, rgb(255, 243, 159)));
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 20px 15px;
+    font-weight: bold;
+}
+.vip .col-md-3 {
+    border: 2px solid rgb(167, 130, 39);
+}
+.vip .col-md-3:not(.title) {
+    border-left: 0;
+}
+.vip-contents2 .col-md-3 {
+    border-top: 0;
+}
+.vip-contents img {
+    position: absolute;
+}
+.vip-contents .col-md-9 img {
+    bottom: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.vip-contents .grand_img:after{
+    content: '';
+    position: absolute;
+    top: -155px;
+    background: url(https://cloud.githubusercontent.com/assets/12628112/22919659/fd624072-f2cb-11e6-9ae1-cd5a65f5ee94.png) no-repeat center center/cover;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 78px;
+    z-index: 1;
+    right: -25px;
+}
+.vip-contents .title h1 {
+    font-family: 'Nanum Gothic', sans-serif !important;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(255, 223, 96)),color-stop(0.2, rgb(255, 248, 172)),color-stop(0.5, rgb(158, 112, 31)),color-stop(0.78, rgb(219, 194, 52)),color-stop(1, rgb(255, 223, 96)));
+    background-repeat: no-repeat;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.vip-contents .col-md-9 h6 {
+    font-family: 'Nanum Gothic', sans-serif !important;
+    height: 62px;
+    font-size: 30px;
+    padding: 30px 0;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(255, 223, 96)),color-stop(0.2, rgb(255, 248, 172)),color-stop(0.5, rgb(158, 112, 31)),color-stop(0.78, rgb(219, 194, 52)),color-stop(1, rgb(255, 223, 96)));
+    background-repeat: no-repeat;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+.vip-contents .title img {
+    top: -117px;
+    left: 10px;
+}
+.vip-contents2 h1 {
+    margin-bottom: 0;
+    font-family: 'Nanum Gothic', sans-serif !important;
+    height: 68px;
+    font-size: 25px;
+    padding-top: 10px;
+    color:white;
+    letter-spacing: 1px;
+}
+.vip .inside {
+    position:relative;
+    background-color: rgba(209, 0, 0, 0.10);
+    height: 100%;
+    z-index: 1;
+}
+.vip-contents2 h6 {
+    position:relative;
+    font-family: 'Nanum Gothic', sans-serif !important;
+    height: 62px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 30px;
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%,color-stop(0, rgb(114, 187, 9)),color-stop(1, rgb(180, 253, 75)));
+    background-repeat: no-repeat;
+    color:transparent;
+    -webkit-background-clip: text;
+}
+.vip-contents2 h6.major,
+.vip-contents2 h6.grand {
+    font-family: 'Open Sans' , sans-serif !important;
+    background-image: -webkit-repeating-linear-gradient(bottom,rgb(179, 169, 13) 0%,rgb(255, 240, 0) 50%,rgb(251, 252, 132) 100%);
+    background-repeat: no-repeat;
+}
+/* .vip-contents2 h6.major {
+    background-image: -webkit-repeating-linear-gradient(bottom,rgb(179, 169, 13) 0%,rgb(255, 240, 0) 50%,rgb(251, 252, 132) 100%);
+}
+.vip-contents2 h6.grand {
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%,color-stop(0, rgb(9, 104, 118)),color-stop(0.59, rgb(5, 193, 255)),color-stop(1, rgb(6, 144, 170)));
+} */
+.vip-contents2 h6.grand:after{
+    text-shadow: 2px -16px 0px #403305;
+}
+.vip-contents2 h6:after {
+    background: transparent;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    text-shadow: 2px -14px 4px black;
+    bottom: 0;
+    z-index: -1;
+    right: 0;
+}
+.vip-contents2 .f20 {
+    font-size: 20px;
+}
+.vip-contents2 .f24 {
+    font-size: 24px;
+}
+.vip-contents2 .f30 {
+    font-size: 30px;
+}
+.vip-contents2 .f40 {
+    font-size: 40px;
+}
+.vip-contents2 .f50 {
+    font-size: 50px;
+}
+.terms {
+    margin-bottom:100px;
+}
+.terms h1, .terms h4 {
+    font-family: 'Nanum Gothic', sans-serif !important;
+}
+.terms ul {
+    padding-left: 20px;
+}
+.terms h4 {
+    margin-bottom: 20px;
+}
+.terms h4.takenote {
+    color: red;
+}
+.terms h4 strong {
+    font-size: 17px;
+}
+.modal-body h5 {
+    border-bottom: 2px solid dimgray;
+}
+.modal-body p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.close {
+    font-size: 42px;
+}
