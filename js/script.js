@@ -1,22 +1,22 @@
 window.onload = () => {
 
-    var jyp_modal = document.getElementsByClassName('jyp-modal')
-    var modal_btn = document.getElementsByClassName('btn-gold')
-    var modal_close = document.getElementsByClassName('close-bg')
+    var m = document.getElementsByClassName('jyp-modal')
+    var mb = document.getElementsByClassName('btn-gold')
+    var mc = document.getElementsByClassName('close-bg')
 
-    for (let i = 0; i <= jyp_modal.length; i++) {
-        modal_btn[i].onclick = () => {
-            jyp_modal[i].style.display = "block"
+    for (let i = 0; i <= m.length; i++) {
+        mb[i].onclick = () => {
+            m[i].style.display = "block"
         }
     
-        modal_close[i].onclick = () => {
-            jyp_modal[i].style.display = "none"
+        mc[i].onclick = () => {
+            m[i].style.display = "none"
         }
         
-        jyp_modal[i].onclick = (evt) => {
-            if (evt.target == jyp_modal[i]) {
-                console.log(`${jyp_modal[i].className}-${[i]} has been closed.`)
-                jyp_modal[i].style.display = "none"
+        m[i].onclick = (evt) => {
+            if (evt.target == m[i]) {
+                console.log(`${m[i].className}-${[i]} has been closed.`)
+                m[i].style.display = "none"
             }
         }
     }
