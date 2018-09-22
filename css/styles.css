@@ -63,6 +63,8 @@ h6 {
     line-height: 1.1
 }
 
+.row-6-1 .jyp-h2 { font-size: 23px; }
+
 .row-1 div:not(:first-child)>img {
     transform: scale(1.2, 1.2) translate(-4%)
 }
